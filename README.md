@@ -18,13 +18,44 @@ La mission consiste à produire une analyse (étude) complète des données perm
 
 Selon la FAO, la **sous-alimentation** (souvent appelée **PoU** pour *Prevalence of Undernourishment*) désigne l'état d'un individu dont la consommation alimentaire habituelle est insuffisante pour fournir l'apport d'énergie alimentaire nécessaire pour mener une vie normale, active et en bonne santé.
 
-### Objectifs techniques 
+Mesure de la sous-nutrition : Elle est exprimée principalement en pourcentage de la population totale concernée (la proportion de personnes souffrant de faim chronique).
+
+## Données utilisées
+L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour analyser la disponibilité alimentaire et l'état nutritionnel des populations.
+
+###  Liste des fichiers
+
+* **`fr_vegetaux.csv`** : Bilans alimentaires des produits d'origine végétale par pays (flux physiques et apports nutritionnels).
+* **`fr_animaux.csv`** : Bilans alimentaires des produits d'origine animale par pays (même structure que le fichier végétaux).
+* **`fr_cereales.csv`** : Bilans ciblés sur les céréales (**sous-ensemble de `fr_vegetaux.csv`**, isolé comme choix de simplification métier).
+* **`fr_population.csv`** : Effectifs de la population par pays, exprimés en milliers d'habitants (`1 000 No`).
+* **`fr_sousalimentation.csv`** : Estimations de la sous-nutrition par pays sur 5 périodes glissantes.
+
+###  Indicateurs et unités de mesure
+
+#### 1. Démographie & Santé
+* **Population totale** : `1 000 No` (milliers d'habitants)
+* **Sous-alimentation** : `1 000 No` ou `%`
+
+#### 2. Flux physiques et Bilan de masse (`1 000 t`)
+* **Ressources / Entrées** : Quantité produite, Quantité importée, Variation des stocks
+* **Emplois / Sorties** : Quantité exportée, Quantité mise sur le marché intérieur (Disponibilité intérieure)
+* **Usages** : Denrées alimentaires (consommation humaine), Aliments pour animaux, Semences, Produits transformés, Autres utilisations non alimentaires
+* **Pertes & Ajustements** : Pertes, Consommation touristique, Résidus
+
+#### 3. Apports nutritionnels (par habitant)
+* **Approvisionnement alimentaire** : `kg/hab./an`
+* **Apport énergétique** : `kcal/hab./jour`
+* **Apport en protéines** : `g/hab./jour`
+* **Apport en lipides** : `g/hab./jour`
+
+## Objectifs techniques 
 * **Étape 1 - Diagnostic qualité et préparation :** Auditer rigoureusement les 5 fichiers de données (valeurs manquantes, doublons, couverture géographique, unités, symboles de fiabilité, valeurs extrêmes) via la POO, puis nettoyer et fusionner les sources pour créer un dataset global.
 * **Étape 2 - Analyse exploratoire et corrélations :** Mener des analyses univariées, bivariées et des tests statistiques de corrélation pour cartographier les disparités de disponibilité alimentaire et de sous-nutrition.
 * **Étape 3 - Modélisation prédictive et ACP :** Développer un modèle de régression pour imputer les valeurs manquantes de sous-nutrition et réaliser une Analyse en Composantes Principales (ACP) sur les indicateurs nutritionnels.
 * **Étape 4 - Clustering et restitution :** Segmenter les pays selon leurs profils alimentaires et nutritionnels via un clustering *K-Means* ($k$ déterminé par la méthode du coude).
 
-### Objectifs opérationnels
+## Objectifs opérationnels
 * Cartographie des zones critiques : Identifier sans ambiguïté les pays et les régions du monde les plus touchés par la sous-nutrition chronique pour prioriser l'allocation des aides d'urgence.
 
 * Compréhension des facteurs structurels de la malnutrition : Mesurer l'impact réel des déséquilibres alimentaires (ex: dépendance excessive aux céréales vs diversité des apports en protéines animales) sur la prévalence de la sous-alimentation.
@@ -64,10 +95,6 @@ FAO_DATALAB/
 │   └── Analyse_FAO.ipynb       # Notebook principal structuré par étapes
 │
 ├── Outputs/                    # Résultats exportés (datasets propres, graphiques)
-│
-├── Scripts/
-│   ├── __init__.py
-│   └── profiler.py             # Classes orientées objet (POO : DataProfiler / ProfileurFAO)
 │
 ├── .gitignore
 ├── README.md
