@@ -7,7 +7,7 @@ Bienvenue dans le dépôt du projet **FAO Datalab**. Ce projet s'inscrit dans le
 ## Contexte et Problématique de la Mission
 
 ### Contexte
-La FAO (Organisation des Nations Unies pour l'Alimentation et l'Agriculture) collecte chaque année des données sur la disponibilité alimentaire, la sous-nutrition et la population à l'échelle mondiale. Les données transmises sont de véritables données FAO, non modifiées de **2023**.
+La FAO (Organisation des Nations Unies pour l'Alimentation et l'Agriculture) collecte chaque année des données sur la disponibilité alimentaire, la sous-nutrition et la population à l'échelle mondiale. Les données transmises sont de véritables données FAO, non modifiées de **2023** - Elles sont cependant **LIMITEES** car elles n'incluent pas l'ensembles des indicateurs et variables disponibles des bilans alimentaires et facteurs exogènes pouvant expliquer la sous-nutrition.
 
 La sous-nutrition touche des centaines de millions de personnes à travers le monde, représentant un défi humanitaire et sanitaire majeur qui compromet le développement socio-économique des populations vulnérables. Ses conséquences directes se traduisent par des retards de croissance chez les enfants, un affaiblissement durable du système immunitaire et une baisse significative de la productivité active. 
 
