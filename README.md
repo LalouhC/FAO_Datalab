@@ -81,7 +81,7 @@ Visualisation de la distribution du taux de sous-nutrition à l'échelle mondial
 Aperçu de la segmentation géographique des 156 pays selon les 4 clusters K-Means :
 
 <img width="1390" height="832" alt="hungermap_clusters" src="https://github.com/user-attachments/assets/3b99739e-0391-4256-873b-641b2568913f" />
-🔗 👉 **[Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](./Outputs/hungermap_kmeans_globe.html)**
+🔗 👉 [Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](https://clustersousnitrition.netlify.app))
 
 *Légende : Cartographie mondiale des clusters. Les 20 zones aux données sous-jacentes prédites par régression sont représentées par des signaux pulsatiles.*
 
