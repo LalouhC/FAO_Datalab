@@ -40,7 +40,6 @@ L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour ana
 #### 2. Flux physiques et Bilan de masse (`1 000 t`)
 * **Ressources / Entrées** : Quantité produite, Quantité importée, Variation des stocks
 * **Emplois / Sorties** : Quantité exportée, Quantité mise sur le marché intérieur (Disponibilité intérieure)
-* **Usages** : Denrées alimentaires (consommation humaine), Aliments pour animaux, Semences, Produits transformés, Autres utilisations non alimentaires
 * **Pertes & Ajustements** : Pertes, Consommation touristique, Résidus
 
 #### 3. Apports nutritionnels (par habitant)
@@ -64,14 +63,29 @@ L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour ana
 
 * Ciblage par profils de pays (Clustering) : Catégoriser les pays selon leurs vulnérabilités structurelles (ex: pays souffrant de déficit calorique pur vs pays ayant des déséquilibres de distribution) afin de concevoir des politiques d'aide sur-mesure (aide alimentaire d'urgence vs transition agricole à long terme).
 
-* Formulation de recommandations opérationnelles : Traduire les résultats statistiques en plans d'action concrets (ex: diversification des cultures, sécurisation des chaînes d'approvisionnement) présentés aux commanditaires.Conduire un diagnostic qualité rigoureux portant sur les limites réelles du jeu de données.
+* Formulation de recommandations opérationnelles : Traduire les résultats statistiques en plans d'action concrets (ex: diversification des cultures, sécurisation des chaînes d'approvisionnement) présentés aux commanditaires. Conduire un diagnostic qualité rigoureux portant sur les limites réelles du jeu de données.
 
 ---
 ## Aperçu Visuel des Résultats
-*( visuel clé généré dans  outputs a intégrer)*
 
-> ![Carte ou Graphique de synthèse](Outputs/apercu_analyse.png)  
-*Légende : Aperçu de la segmentation des pays / cartographie de la sous-nutrition.*
+### 1. Taux de Sous-Nutrition Global
+Visualisation de la distribution du taux de sous-nutrition à l'échelle mondiale :
+
+[![Globe 3D Sous-Nutrition](Outputs/taux_sousnut.png)](Outputs/globe_3d_sousnutrition.html)
+
+🔗 **[👉 Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition (HTML)](Outputs/globe_3d_sousnutrition.html)**
+
+*Légende : Carte continue du taux de sous-nutrition (%) par pays et localisation des 20 zones imputées.*
+
+### 2. Spatialisation K-Means (HungerMap LIVE)
+Aperçu de la segmentation géographique des 156 pays selon les 4 clusters K-Means :
+
+[![Globe 3D K-Means](Outputs/hungermap_clusters.png)](Outputs/hungermap_kmeans_globe.html)
+
+🔗 **[👉 Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](Outputs/hungermap_kmeans_globe.html)**
+
+*Légende : Cartographie mondiale des clusters. Les 20 zones aux données sous-jacentes prédites par régression sont représentées par des signaux pulsatiles.*
+
 ---
 
 ## Architecture du Projet
@@ -95,6 +109,11 @@ FAO_DATALAB/
 │   └── Analyse_FAO.ipynb       # Notebook principal structuré par étapes
 │
 ├── Outputs/                    # Résultats exportés (datasets propres, graphiques)
+│   └── dataset_global_FAO.csv
+│   └── globe_3d_sousnutrition.html
+│   └── hungermap_clusters.png
+│   └── hungermap_kmeans_globe.html
+│   └── taux_sousnut.png
 │
 ├── .gitignore
 ├── README.md
