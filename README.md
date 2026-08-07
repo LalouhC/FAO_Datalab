@@ -73,7 +73,7 @@ L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour ana
 Visualisation de la distribution du taux de sous-nutrition à l'échelle mondiale :
 
 <img width="1462" height="821" alt="taux_sousnut" src="https://github.com/user-attachments/assets/4ff40107-5110-4583-8f45-dac478b1e49c" />
-🔗👉 [Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition (HTML)](./Outputs/correlation_calorique_sousnutrition.html)
+🔗👉 **[Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition (HTML)](./Outputs/correlation_calorique_sousnutrition.html)**
 
 *Légende : Carte continue du taux de sous-nutrition (%) par pays et localisation des 20 zones imputées.*
 
@@ -81,7 +81,7 @@ Visualisation de la distribution du taux de sous-nutrition à l'échelle mondial
 Aperçu de la segmentation géographique des 156 pays selon les 4 clusters K-Means :
 
 <img width="1390" height="832" alt="hungermap_clusters" src="https://github.com/user-attachments/assets/3b99739e-0391-4256-873b-641b2568913f" />
-🔗 👉 [Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](./Outputs/hungermap_kmeans_globe.html)
+🔗 👉 **[Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](./Outputs/hungermap_kmeans_globe.html)**
 
 *Légende : Cartographie mondiale des clusters. Les 20 zones aux données sous-jacentes prédites par régression sont représentées par des signaux pulsatiles.*
 
