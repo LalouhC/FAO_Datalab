@@ -1,3 +1,4 @@
+
 # FAO Datalab : Analyse de la Sous-Nutrition au niveau mondial
 
 Bienvenue dans le dépôt du projet **FAO Datalab**. Ce projet s'inscrit dans le cadre d'une mission de conseil réalisée pour un cabinet spécialisé en politiques alimentaires.
@@ -71,8 +72,7 @@ L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour ana
 ### 1. Taux de Sous-Nutrition Global
 Visualisation de la distribution du taux de sous-nutrition à l'échelle mondiale :
 
-[![Globe 3D Sous-Nutrition](Outputs/taux_sousnut.png)](Outputs/globe_3d_sousnutrition.html)
-
+<img width="1462" height="821" alt="taux_sousnut" src="https://github.com/user-attachments/assets/4ff40107-5110-4583-8f45-dac478b1e49c" />
 🔗 **[👉 Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition (HTML)](Outputs/globe_3d_sousnutrition.html)**
 
 *Légende : Carte continue du taux de sous-nutrition (%) par pays et localisation des 20 zones imputées.*
@@ -80,8 +80,7 @@ Visualisation de la distribution du taux de sous-nutrition à l'échelle mondial
 ### 2. Spatialisation K-Means (HungerMap LIVE)
 Aperçu de la segmentation géographique des 156 pays selon les 4 clusters K-Means :
 
-[![Globe 3D K-Means](Outputs/hungermap_clusters.png)](Outputs/hungermap_kmeans_globe.html)
-
+<img width="1390" height="832" alt="hungermap_clusters" src="https://github.com/user-attachments/assets/3b99739e-0391-4256-873b-641b2568913f" />
 🔗 **[👉 Cliquer ici pour ouvrir le Globe 3D Interactif K-Means (HTML)](Outputs/hungermap_kmeans_globe.html)**
 
 *Légende : Cartographie mondiale des clusters. Les 20 zones aux données sous-jacentes prédites par régression sont représentées par des signaux pulsatiles.*
