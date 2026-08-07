@@ -73,7 +73,7 @@ L'étude s'appuie sur **5 fichiers de données brutes** issus de la FAO pour ana
 Visualisation de la distribution du taux de sous-nutrition à l'échelle mondiale :
 
 <img width="1462" height="821" alt="taux_sousnut" src="https://github.com/user-attachments/assets/4ff40107-5110-4583-8f45-dac478b1e49c" />
-🔗👉 [Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition]( https://raw.githack.com/LalouhC/FAO_Datalab/blob/main/Outputs/hungermap_kmeans_globe.html)
+🔗👉 [Cliquer ici pour ouvrir le Globe 3D Interactif de Sous-Nutrition](https://tauxsousnutrition.netlify.app/)
 
 *Légende : Carte continue du taux de sous-nutrition (%) par pays et localisation des 20 zones imputées.*
 
